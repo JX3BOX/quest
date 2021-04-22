@@ -1,0 +1,36 @@
+.m-info {
+  .u-stat {
+    .fl;
+    white-space: nowrap;
+    overflow: auto;
+    .fz(14px);
+
+    em {
+      .mr(10px);
+      font-style: normal;
+    }
+
+    b {
+      font-style: italic;
+      color: @primary;
+
+      &:after {
+        content: "|";
+        font-weight: 300;
+        color: #999;
+        .ml(10px);
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    }
+
+    span {
+      .mr(10px);
+
+      &:last-child b {
+        &:after {
+          .none;
+        }
+      }
+    }
+  }
+}
