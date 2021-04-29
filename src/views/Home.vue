@@ -28,8 +28,8 @@
                       </div>
                       <div class="m-carousel-content">
                         <div class="u-title" v-text="item.Name"></div>
-                        <div class="u-desc" v-if="item.post">
-                          <span :title="item.post.remark">{{'By ' + item.post.user_nickname}}</span>
+                        <div class="u-desc">
+                          <span>【{{item.EndMapName}}】</span>
                         </div>
                       </div>
                     </router-link>
@@ -99,7 +99,7 @@
         menu_groups: {},
         hots: null,
         hot_views: null,
-        hot_icon: JX3BOX.__iconPath + "icon/244.png",
+        hot_icon: JX3BOX.__iconPath + "icon/388.png",
         jargons: [],
         newest_posts: null,
       };
@@ -137,7 +137,7 @@
 
           get_list({ids: source_ids}).then((res) => {
             res = res.data;
-            // 按照长度分批
+            // 按照长度分批 
             if (res.code === 200) this.hots = this.chuck(Object.values(res.data.data));
           });
         });

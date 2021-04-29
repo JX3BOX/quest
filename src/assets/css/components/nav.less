@@ -8,8 +8,8 @@
 //子级节点
 .is-leaf + .el-tree-node__label {
   &:before {
-    content: "»";
-    color: @color;
+    // content: '⇨ '; 
+    // color: #d0d4dd;
     .mr(5px);
   }
 }
@@ -41,7 +41,7 @@
     .pa;
     top: @search-input-height;
     .w(100%);
-    .h(calc(~"100% - 30px -" @search-input-height));
+    .h(calc(~'100% - 30px -' @search-input-height));
     overflow-y: auto;
   }
 

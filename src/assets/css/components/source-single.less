@@ -3,8 +3,8 @@
   .pr;
   .mb(10px);
   padding: 10px;
-  background-color: #EBE7DC;
-  border: 1px solid #577B73;
+  background-color: #fff;
+  border: 1px solid #ddd;
   color: black;
   font-size: 12px;
   font-weight: bold;
@@ -13,20 +13,20 @@
   transition: 0.15s border ease-in-out, 0.15s background ease-in-out;
 
   &:hover {
-    border-color: @primary;
-    background-color: #f0e9f0;
+    background-color: #f5f7fa;
   }
 
   .m-name {
     .mb(8px);
     .bold;
+    .fz(14px);
 
     & > * {
       .ml(5px);
     }
 
     .u-level {
-      opacity: .75;
+      opacity: 0.75;
     }
 
     .u-required {
@@ -35,7 +35,8 @@
 
     .u-can {
       .ml(8px);
-      color: darkgreen;
+      .fz(12px);
+      color: #13d606fa;
     }
   }
 
@@ -50,17 +51,23 @@
   }
 
   .u-description {
-    .mb(8px);
-    line-height: 1.6em;
+    .mb(4px);
+    .fz(14px, 2);
+    .color(#777);
+    text-indent: 20px;
+   
   }
 
   .m-start-end {
-    opacity: .75;
-
-    .u-start, .u-end {
+    display: flex;
+    flex-direction: column;
+    .ml(20px);
+    .fz(12px, 1.8);
+    .color(#555);
+    .u-start,
+    .u-end {
       .dbi;
       .mr(15px);
-
       span {
         .mr(5px);
       }
