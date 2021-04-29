@@ -20,13 +20,18 @@
     .mb(8px);
     .bold;
     .fz(14px);
+    .u-name{
+      color: #6f42c1;
+    }
 
     & > * {
       .ml(5px);
     }
 
+    
     .u-level {
-      opacity: 0.75;
+      .color(#999); 
+
     }
 
     .u-required {
@@ -63,7 +68,7 @@
     flex-direction: column;
     .ml(20px);
     .fz(12px, 1.8);
-    .color(#555);
+    .color(#666);
     .u-start,
     .u-end {
       .dbi;
@@ -76,6 +81,9 @@
 
   .u-meta {
     .fr;
+    .u-id{
+      .color(#756f6f);
+    }
   }
 
   @media screen and (max-width: @ipad) {

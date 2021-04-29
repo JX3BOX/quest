@@ -51,7 +51,6 @@
           res = res.data;
           if (res.code === 200) {
             this.sources = res.data.data;
-            console.log(this.sources)
             this.sources_total = res.data.total;
           }
         });
