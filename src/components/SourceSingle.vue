@@ -17,7 +17,7 @@
       <div v-for="(item, key) in source.EndRequireItems" :key="key" v-text="`${item.Name}：0/${item.Amount}`"></div>
     </div>
     <div class="u-description">
-      <div v-html="desctxt"></div>
+      <div><i class="u-icon el-icon-star-on"></i>{{ desctxt }}</div>
     </div>
     <div class="m-start-end">
       <div class="u-start">
