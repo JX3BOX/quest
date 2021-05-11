@@ -16,9 +16,10 @@
     <div class="m-complete">
       <div v-for="(item, key) in source.EndRequireItems" :key="key" v-text="`${item.Name}：0/${item.Amount}`"></div>
     </div>
-    <div class="u-description">
-      <div><i class="u-icon el-icon-star-on"></i>{{ desctxt }}</div>
+    <div class="u-objective">
+      <div><i class="u-icon el-icon-star-on"></i><span v-html="desctxt"></span></div>
     </div>
+    <div class="u-description" v-if="source.Description" v-html="source.Description"></div>
     <div class="m-start-end">
       <div class="u-start">
         <b>开始地图：</b>
