@@ -8,6 +8,7 @@ export default new Vuex.Store({
         sidebar : {
             class_id: null,
         },
+        client : location.href.includes('origin') ? 'origin' : 'std',
     },
     mutations: {},
     getters: {},

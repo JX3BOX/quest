@@ -15,12 +15,12 @@
         <LeftSidebar>
             <Nav/>
         </LeftSidebar>
-        <Main :withoutRight="false">
+        <Main :withoutRight="true">
             <!-- 路由页面内容 -->
             <router-view/>
             <!-- 右侧咨询 -->
-            <RightSidebar>
-            </RightSidebar>
+            <!-- <RightSidebar> -->
+            <!-- </RightSidebar> -->
             <Footer></Footer>
         </Main>
     </div>

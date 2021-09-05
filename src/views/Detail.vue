@@ -27,6 +27,15 @@
                 </template>
                 <template slot="body">
                     <Article :content="wiki_post.post.content" />
+                    <Thx
+                        class="m-thx"
+                        slot="single-append"
+                        :postId="id"
+                        postType="quest"
+                        :userId="author_id"
+                        :adminBoxcoinEnable="isRevision"
+                        :userBoxcoinEnable="isRevision"
+                    />
                 </template>
             </WikiPanel>
 
@@ -78,6 +87,12 @@ export default {
         },
         type: function() {
             return this.wiki_post.source.type;
+        },
+        isRevision: function () {
+            return !!this.$route.params.post_id;
+        },
+        author_id: function () {
+            return ~~this.wiki_post.post.user_id;
         },
     },
     methods: {
