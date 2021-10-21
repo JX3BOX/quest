@@ -4,6 +4,46 @@
 
         <WikiPanel :border-none="true">
             <template slot="head-title">
+                <i class="el-icon-location-information"></i>
+                <span> 便捷入口</span>
+            </template>
+            <template slot="head-actions">
+                <a class="other" target="_blank" :href="feedback"
+                    >反馈建议 &raquo;</a
+                >
+            </template>
+            <template slot="body">
+                <ul class="u-qlinks">
+                    <li class="u-qlink">
+                        <a href="/cj" target="_blank">
+                            <i class="el-icon-medal"></i>
+                            <span> 成就百科</span>
+                        </a>
+                    </li>
+                    <li class="u-qlink">
+                        <a href="/item" target="_blank">
+                            <i class="el-icon-apple"></i>
+                            <span> 物品百科</span>
+                        </a>
+                    </li>
+                    <li class="u-qlink">
+                        <a href="/knowledge/#/pet" target="_blank">
+                            <i class="el-icon-pear"></i>
+                            <span> 宠物百科</span>
+                        </a>
+                    </li>
+                    <li class="u-qlink">
+                        <a href="/quest" target="_blank">
+                            <i class="el-icon-discover"></i>
+                            <span> 任务百科</span>
+                        </a>
+                    </li>
+                </ul>
+            </template>
+        </WikiPanel>
+
+        <WikiPanel :border-none="true">
+            <template slot="head-title">
                 <i class="el-icon-collection"></i>
                 <span>热门任务</span>
             </template>
